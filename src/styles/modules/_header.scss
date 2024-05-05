@@ -1,0 +1,97 @@
+@import 'root';
+header {
+	display: inline;
+  }
+  
+  /*jumbotron*/
+  .jumbotron {
+	font-size: 20px;
+	padding-top: 200px;
+	// background-image: url(../public/images/hero-image_4.jpg);
+	background-size: cover;
+	text-align: center;
+	color: $light-color;
+	height: 100vh;
+	position: relative;
+	width: 100%;
+  
+	&::after {
+	  content: '';
+	  display: block;
+	  width: 100%;
+	  height: 100%;
+	  background-image: linear-gradient(to top, rgba(0, 0, 0, 1), rgba(0, 0, 0, 0));
+	  position: absolute;
+	  bottom: 0;
+	}
+  }
+  
+  .container-jumbotron {
+	position: relative;
+	align-self: center;
+	z-index: 1;
+	width: 100%;
+  
+	.garis {
+	  width: 10%;
+	  border: 1px solid $secondary-color;
+	  margin: 0 auto 0 auto;
+	  animation: garis 2s ease;
+	}
+  
+	h1 {
+	  margin: 20px auto;
+	  font-size: 2em;
+	  color: $four-color;
+	  animation: nama 3s ease;
+	  font-family: $tapestry-font;
+	}
+  
+	h2 {
+	  margin: 20px auto;
+	  font-size: 1.5em;
+	  color: $light-color;
+	  animation: deskripsi 3s ease;
+	}
+  
+	p {
+	  margin-top: 20px;
+	  font-size: 1em;
+	  color: $light-color;
+	  animation: deskripsi 2s ease;
+	}
+  }
+  
+  @keyframes garis {
+	0% {
+	  width: 0;
+	  border: 0 solid $third-color;
+	  margin: 0 auto 0 auto;
+	}
+	100% {
+	  width: 10%;
+	  border: 1px solid $secondary-color;
+	  margin: 0 auto 0 auto;
+	}
+  }
+  
+  @keyframes deskripsi {
+	0% {
+	  opacity: 0;
+	}
+	100% {
+	  opacity: 1;
+	}
+  }
+  
+  @keyframes nama {
+	from {
+	  opacity: 0;
+	  color: $light-color;
+	}
+	to {
+	  opacity: 1;
+	  color: $four-color;
+	}
+  }
+  

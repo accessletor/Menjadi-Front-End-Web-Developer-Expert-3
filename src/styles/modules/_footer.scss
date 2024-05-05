@@ -1,0 +1,12 @@
+@import 'root';
+footer {
+	padding: 20px;
+	background-color: $footer-color;
+	text-align: center;
+	font-weight: bold;
+  
+	p {
+	  color: $light-color;
+	}
+  }
+  

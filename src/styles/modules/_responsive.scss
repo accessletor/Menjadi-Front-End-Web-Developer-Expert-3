@@ -1,0 +1,97 @@
+@import 'root';
+@media screen and (max-width: 480px) {
+  .jumbotron {
+    background-image: url('../public/images-responsive/hero-image_4-small.jpg');
+  }
+}
+@media screen and (max-width: 768px) {
+  .jumbotron {
+    background-image: url('../public/images-responsive/hero-image_4-medium.jpg');
+  }
+}
+@media screen and (max-width: 960px) {
+  .jumbotron {
+    background-image: url('../public/images-responsive/hero-image_4-large.jpg');
+  }
+}
+@media screen and (min-width: 768px) {
+  .cards {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+  }
+  .fav-cards {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  .input-container{
+    grid-template-columns: repeat(2, 1fr);
+  }
+   .contact-map,
+  .contact-form {
+    flex: 50%;
+  }
+}
+
+@media screen and (min-width: 960px) {
+  .bg-sidebar.change {
+    right: 0;
+    visibility: $hidden-flow;
+    display: none;
+  }
+
+  .burger {
+    display: none;
+  }
+
+  nav {
+    position: relative;
+  }
+
+  nav ul {
+    display: flex;
+    position: relative;
+    background-color: $reset;
+    top: $reset;
+    bottom: $reset;
+    right: $reset;
+    width: $reset;
+    flex-direction: row;
+  }
+
+  nav ul li {
+    padding: 10px 15px;
+    min-width: $min-size;
+  }
+
+  nav ul li:hover::after {
+    content: "";
+    display: block;
+    width: 100%;
+    transition: 0.3s;
+    background-color: $dark-color;
+  }
+
+  nav ul li a {
+    color: $dark-color;
+    font-size: 1.1rem;
+    min-height: $min-size;
+    min-width: $min-size;
+  }
+
+  nav ul li:last-child {
+    font-weight: 550;
+  }
+
+  .cards {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  }
+  .fav-cards {
+    grid-template-columns: repeat(3, 1fr);
+  }
+  .input-container{
+    grid-template-columns: repeat(3, 1fr);
+  }
+  .jumbotron {
+    background-image: url('../public/images-responsive/hero-image_4-large.jpg');
+  }
+}

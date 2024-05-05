@@ -1,0 +1,69 @@
+@import url('https://fonts.googleapis.com/css2?family=BhuTuka+Expanded+One&family=Quicksand&family=Tapestry&display=swap');
+
+// Variable Declarations
+$primary-color: #f2930f;
+$secondary-color: #eba61c;
+$third-color: #cc6c3f;
+$four-color: #f59740;
+$five-color: #aaa;
+$light-color: #fff;
+$dark-color: #000;
+$err: red;
+$bar-color: #333;
+$silver: silver;
+$field: #313a46;
+$dur: 1s;
+$label: #9b9b9b;
+$hover-btn-satu: #fac459;
+$footer-color: #ed8b28;
+$reset: unset;
+$btn-color-review: #1684fa;
+$btn-color-review-hover: #77b5f7;
+$grey: darkgrey;
+$shadow-color-dua: rgba(0, 0, 0, 0.1);
+$shadow-color-tiga: rgba(0, 0, 0, 0.2);
+$light-color-list: #f9f9f9;
+$min-size: 44px;
+$shadow-color: #666;
+$quicksand-font: 'Quicksand', sans-serif;
+$tapestry-font: 'Tapestry', cursive;
+$shadow-color-card: rgba(0, 0, 0, 0.3);
+$border-input: #bcbcbc;
+$background-nav-responsive: #505050;
+$smooth-scroll: smooth;
+$box-border: border-box;
+$p-0: 0;
+$m-0: 0;
+$hidden-flow: hidden;
+
+// Global Styles
+* {
+  margin: $m-0;
+  padding: $p-0;
+  box-sizing: $box-border;
+}
+
+html {
+  scroll-behavior: $smooth-scroll;
+}
+
+body {
+  font-family: $quicksand-font;
+  margin: $m-0;
+  padding: $p-0;
+}
+
+// Skip Link
+.skip-link {
+  position: absolute;
+  top: -80px;
+  left: 0;
+  background-color: $four-color;
+  color: $light-color;
+  padding: 8px;
+  z-index: 10;
+
+  &:focus {
+    top: 0;
+  }
+}
